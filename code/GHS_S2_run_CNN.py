@@ -1,3 +1,12 @@
+#Code uses the Sentinel-2 image composite of 10 m resolution and with 4 bands:
+#https://data.jrc.ec.europa.eu/dataset/0bd1dfab-e311-4046-8911-c54a8750df79
+#Corbane, Christina; Politis, Panagiotis (2020):  GHS-composite-S2 R2020A - Sentinel-2 global pixel based image composite from L1C data for the period 2017-2018. European Commission, Joint Research Centre (JRC) [Dataset] doi:10.2905/0BD1DFAB-E311-4046-8911-C54A8750DF79 PID: http://data.europa.eu/89h/0bd1dfab-e311-4046-8911-c54a8750df79
+####################
+#Model architecture:
+#Corbane, C., Syrris, V., Sabo, F., Politis, P., Melchiorri, M., Pesaresi, M., Soille, P., Kemper, T., 2020. Convolutional neural networks for global human settlements mapping from Sentinel-2 satellite imagery. Neural Computing & Applications.. doi:10.1007/s00521-020-05449-7
+#Syrris, V.; Hasenohr, P.; Delipetrev, B.; Kotsev, A.; Kempeneers, P.; Soille, P. Evaluation of the Potential of Convolutional Neural Networks and Random Forests for Multi-Class Segmentation of Sentinel-2 Imagery. Remote Sens. 2019, 11, 907. https://doi.org/10.3390/rs11080907
+#Please consider all relevant papers if you use this code
+
 import os, sys
 from osgeo import gdal, osr
 from osgeo import gdalconst
