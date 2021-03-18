@@ -9,5 +9,5 @@ doi:10.1007/s00521-020-05449-7
 
 Models were trained using python 3.7.4 and the following libraries:
 
-tensorflow-gpu==2.0.0
-Keras==2.3.1
+* tensorflow-gpu==2.0.0
+* Keras==2.3.1
