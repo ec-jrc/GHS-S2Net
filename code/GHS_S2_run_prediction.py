@@ -16,7 +16,6 @@ import numpy as np
 from scipy import ndimage
 from skimage.transform import resize
 from sklearn.feature_extraction import image
-from skimage.filters import threshold_multiotsu, threshold_otsu
 import matplotlib.pyplot as plt
 import math
 import copy
@@ -38,8 +37,6 @@ from keras.layers.merge import concatenate
 from keras.layers.core import Lambda
 from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-from keras.utils import multi_gpu_model
-from keras.preprocessing.image import ImageDataGenerator
 
 def ReadImage(infile):
     src = gdal.Open(infile)
