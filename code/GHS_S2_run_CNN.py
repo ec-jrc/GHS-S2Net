@@ -76,7 +76,7 @@ def getModel(input_shape):
     
     # CNN 1
     model.add(Conv2D(128, kernel_size=(2, 2), strides=(1, 1), input_shape=input_shape))
-    model.add(Conv2D(128, kernel_size=(2, 2), strides=(1, 1))
+    model.add(Conv2D(128, kernel_size=(2, 2), strides=(1, 1)))
     model.add(BatchNormalization())
     model.add(Activation('tanh'))
     model.add(Dropout(0.1))
