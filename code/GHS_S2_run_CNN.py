@@ -12,14 +12,9 @@ import os, sys
 from osgeo import gdal, osr
 from osgeo import gdalconst
 import numpy as np
-from scipy import ndimage
-from skimage.transform import resize
-from sklearn.feature_extraction import image
-import matplotlib.pyplot as plt
 import math
 import copy
 import time
-from sklearn.model_selection import train_test_split
 import json
 import pandas as pd
 import gc
@@ -32,12 +27,9 @@ from keras.models import Sequential
 from keras.layers.normalization import BatchNormalization
 from keras.layers import Dense, Dropout, Flatten, Activation
 from keras.layers import Input
-from keras.layers import merge, Conv2D, MaxPooling2D, UpSampling2D, Reshape, core, Dropout
-from keras.layers.merge import concatenate
-from keras.layers.core import Lambda
+from keras.layers import Conv2D, MaxPooling2D, core
 from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-from keras.utils import multi_gpu_model
 
 #Read the imagery
 #Input argument is the path to the raster/multiband image
@@ -84,7 +76,7 @@ def getModel(input_shape):
     
     # CNN 1
     model.add(Conv2D(128, kernel_size=(2, 2), strides=(1, 1), input_shape=input_shape))
-    model.add(Conv2D(128, kernel_size=(2, 2), strides=(1, 1), input_shape=input_shape))
+    model.add(Conv2D(128, kernel_size=(2, 2), strides=(1, 1))
     model.add(BatchNormalization())
     model.add(Activation('tanh'))
     model.add(Dropout(0.1))
