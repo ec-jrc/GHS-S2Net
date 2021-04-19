@@ -2,7 +2,7 @@
 #Corbane, C., Syrris, V., Sabo, F., Politis, P., Melchiorri, M., Pesaresi, M., Soille, P., Kemper, T., 2020. Convolutional neural networks for global human settlements mapping from Sentinel-2 satellite imagery. Neural Computing & Applications. doi:10.1007/s00521-020-05449-7
 
 ####################
-#The Python script gets as input the 4-band Sentinel-2 image composite in 10 m spatial resolution. The order of the bands is 0: Band 2–Blue; 1: Band 3–Green; 2: Band 4–Red; 3: Band 8–NIR 
+#The Python script gets as input the 4-band Sentinel-2 image composite in 10 m spatial resolution. The order of the bands is 0: Band 4–Red; 1: Band 3–Green; 2: Band 2–Blue; 3: Band 8–NIR 
 #This composite is available at:
 #https://data.jrc.ec.europa.eu/dataset/0bd1dfab-e311-4046-8911-c54a8750df79
 #Corbane, Christina; Politis, Panagiotis (2020):  GHS-composite-S2 R2020A - Sentinel-2 global pixel based image composite from L1C data for the period 2017-2018. European Commission, Joint Research Centre (JRC) [Dataset] doi:10.2905/0BD1DFAB-E311-4046-8911-C54A8750DF79 PID: http://data.europa.eu/89h/0bd1dfab-e311-4046-8911-c54a8750df79
