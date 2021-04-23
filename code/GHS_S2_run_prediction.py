@@ -12,6 +12,7 @@
 import os, sys
 from osgeo import gdal, osr
 from osgeo import gdalconst
+from sklearn.feature_extraction import image
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -19,6 +20,7 @@ import copy
 import time
 import gc
 import csv
+
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' #prevent TF from printing 
 
